@@ -1,55 +1,79 @@
-'''Name -> Sushain Sanan 
-SID -> 21107065
-Branch -> Mechanical'''
-#Question 1
-print("QUESTION 1")
-V = int(input("Enter the First Number:"))
-U = int(input("Enter the Second Number:"))
-S = int(input("Enter the Third Number:"))
-Average = (V + U + S)/3 
-print("The Average of these three numbers is :",Average)
+                            #Assignment 2
 
-#Question 2
-print("QUESTION 2")
-GI = int(input("Enter the Gross Income :"))
-Dep = int(input("Enter the Number of Dependents :"))
-taxable_income= ( (GI - 10000) - Dep*3000 )
-Tax= taxable_income*(0.2)
-print(f"Your Tax is : {Tax}")
+#QUESTION 1
+print("#QUESTION 1")
+str1 = "Python is a case sensitive language"
+#a
+print("Length of the input string:", len(str1))
+#b
+reverse = str1[::-1]
+print(reverse)
+#c
+str2 = "a case sensitive"
+str3 = str2[:]
+#d
+str3 = str3.replace('a case sensitive','object oriented')
+print(str3)
+#e
+index = str1.index('a')
+print(index)
+#f
+str4 = str1.replace(' ','')
+print(str4)
 
-#Question 3
+
+#QUESTION 2
+print("#QUESTION 2")
+name = "SUSHAIN SANAN"
+SID = 21107065
+Dept = "Mechanical"
+CGPA = 7.5
+
+print(f"Hey, {name} Here! \nMy SID is {SID} \nI am from {Dept} and my CGPA is {CGPA}")
+
+
+#QUESTION 3
 print("QUESTION 3")
-N = int(input("Enter seconds: "))
+a,b = 56,10
+print(a&b)
+print(a|b)
+print(a^b)
+print(a<<2,b<<2)
+print(a>>2,b>>4)
 
-Mins = N // 60
-Secs = N % 60
 
-print(Mins, "Minutes and", Secs, "Seconds")
-
-#Question 4
+#QUESTION4
 print("QUESTION 4")
-M = 25 
-num = '25'
-N = int(num) 
-new = 25.0 
-O = int(new)
-D=M+N+O 
-D=str(D)
-print(D)
-print(type(D))
+str1 = input("Enter a string:")
+if 'name' in str1:
+    print('Yes')
+else:
+    print("No")
 
-#Question 5
-print("QUESTION 5")
-from math import pi,sin,cos
-deg=0
-y=0
-z=0
-for deg in range(0,346,15):
-    rad=deg*(pi/180)
-    y=round(sin(rad),4)
-    z=round(cos(rad),4)
-    
-    print(deg,"---",y,z)
-    
-     
+
+#QUSTION 5
+print("QUETION 5")
+a = int(input("Enter triangle side 1:"))
+b = int(input("Enter triangle side 2:"))
+c = int(input("Enter triangle side 3:"))
+e = a + b > c and a + c > b and c + b > a
+
+match e:
+    case True:
+        print('Yes')
+    case False:
+        print('No')
+
+#QUESTION 6
+print("QUESTION 6")
+a = int(input("Enter first number:"))
+b = int(input("Enter second number:"))
+c = bin(a^b)     #convert new number to binary
+d = c.count('1') #count the bits needed to be changed
+print(d)
+
+
+
+
+
 
